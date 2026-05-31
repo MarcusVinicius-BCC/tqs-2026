@@ -29,6 +29,10 @@
             <input type="email" id="email" name="email" placeholder="aluno@ufopa.edu.br" required>
         </div>
         <button type="submit">Validar</button>
+        <div>
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" name="telefone" placeholder="(11) 91234-5678" required>
+        </div>
     </form>
 
     <div id="resultado"></div>
@@ -55,6 +59,10 @@
                 </div>
                 <div class="resultado ${emailValido ? "valido" : "invalido"}">
                     E-mail: ${emailValido ? "válido" : "inválido"}
+                </div>
+                <div>
+                    <label for="telefone">Telefone</label>
+                    <input type="text" id="telefone" name="telefone" placeholder="(11) 91234-5678" required>
                 </div>
             `;
         });
