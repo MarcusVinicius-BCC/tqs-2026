@@ -72,10 +72,11 @@
             e.preventDefault();
             const cpf = document.getElementById("cpf").value;
             const email = document.getElementById("email").value;
+            const telefone = document.getElementById("telefone").value;
             const resposta = await fetch("/validar", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ cpf, email }),
+                ody: JSON.stringify({ cpf, email, telefone }),
             });
             const dados = await resposta.json();
             const div = document.getElementById("resultado");
